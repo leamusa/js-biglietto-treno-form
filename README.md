@@ -32,3 +32,8 @@ Write a program to Ask to the user :
 
 3. The output result can be printed in console
    a the price will be in decimal for cents
+
+# tools
+
+First the structure and css
+and then the rest

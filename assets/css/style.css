@@ -1,0 +1,38 @@
+h1 {
+  background-color: blueviolet;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+section {
+  background-color: rgb(226, 195, 43);
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px 1px;
+}
+section li {
+  background-color: blue;
+  padding-left: 5px;
+  color: rgb(12, 12, 12);
+  padding-top: 20px;
+  border: 2px dashed;
+}
+.flex-form-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+button.btn-primary,
+button.btn-secondary {
+  background-color: brown;
+}
+.flex-form-input {
+  flex: 1;
+  -webkit-flex: 1;
+  color: brown;
+  border-radius: 3px;
+}
