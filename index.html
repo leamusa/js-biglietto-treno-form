@@ -2,41 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <title>Document</title>
+    <title>Train Ticket</title>
   </head>
   <body>
-    <header>
-      <h1>Calculate ticket price</h1>
-    </header>
-    <main>
-      <section>
-        <div class="d-flex box">
-          <div class="container">
-            <h4 id="output-input1">Name and surname</h4>
-            <input id="btn-input1" type="text" value="" />
+    <div class="wrapper">
+      <!-- Calculate Your Ticket Section -->
+      <h2>CALCULATE YOUR TICKET PRICE</h2>
+      <div class="top-container">
+        <div class="row">
+          <div class="col">
+            <label for="user-name">Name and Surname</label>
+            <input
+              id="user-name"
+              type="text"
+              name=""
+              value=""
+              placeholder="Enter name and surname"
+            />
           </div>
-
-          <div class="container">
-            <h4 id="output-input2">kms to travel</h4>
-            <input id="btn-input2" type="text" value="" />
+          <div class="col">
+            <label for="km">Distance to Travel (Km)</label>
+            <input
+              id="km"
+              type="number"
+              name=""
+              value=""
+              placeholder="Distance to travel (Km)"
+            />
           </div>
-          <div class="container">
-            <h4 id="output-input3">Age</h4>
-            <input id="btn-input3" type="text" value="" />
+          <div class="col">
+            <label for="user-age">Age Range</label>
+            <select id="user-age" class="" name="">
+              <option value="minor">Underage</option>
+              <option value="senior">Adult</option>
+              <option value="over65">Over 65</option>
+            </select>
           </div>
         </div>
-
-        <div class="flex-container">
-          <button class="btn btn-primary flex-btn">Genera</button>
-          <input type="text" id="nome" class="flex-input" />
-          <button class="btn btn-primary flex-btn">Annulla</button>
-          <input type="text" id="nome" class="flex-input" />
+        <div class="row">
+          <button id="generate" class="btn">Generate</button>
+          <button id="cancel" class="btn">Cancel</button>
         </div>
-      </section>
-    </main>
+      </div>
+
+      <!-- Your Ticket Section -->
+      <h2>YOUR TICKET</h2>
+      <!-- Ticket Display -->
+      <div id="ticket" class="bottom-container hidden">
+        <h3 class="padding">PASSENGER DETAILS</h3>
+        <div class="ticket-print row_bottom">
+          <div class="col grey">
+            <h3>PASSENGER NAME</h3>
+            <h4 id="passenger-name"></h4>
+          </div>
+          <div class="col bg-ticket">
+            <table>
+              <tr>
+                <th>Offer</th>
+                <th>Carriage</th>
+                <th>CP Code</th>
+                <th>Ticket Cost</th>
+              </tr>
+              <tr>
+                <td id="offer"></td>
+                <td id="carriage"></td>
+                <td id="cp-code"></td>
+                <td id="ticket-price"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- End of Ticket Display -->
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
