@@ -28,7 +28,7 @@ Write a program to Ask to the user :
    b The answer will be printed in console
 2. Once everything is going to work well put the Form in page where:
    a the user can put the data
-   b can visualize the final price if discount is applied
+   b can visualize the final price 
 
 3. The output result can be printed in console
    a the price will be in decimal for cents
